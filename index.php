@@ -13,8 +13,8 @@
     <?php
         $adatbazis = new Adatbazis();
         //lekérdezesek:
-        $matrix = $adatbazis->adatLeker("kep", "szin");
-        $adatbazis->megjelenit($matrix);
+        $matrix = $adatbazis->adatLeker2("nev","kep", "szin");
+        $adatbazis->megjelenit2($matrix);
         if($adatbazis->rekordokSzama("kartya") == 0){
             $adatbazis->kartyaFeltolt();
         }
